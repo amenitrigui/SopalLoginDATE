@@ -930,12 +930,6 @@
 <script src="../assets/vendor/js/menu.js"></script>   
  *@
 
-
-
-
-     
-
-<h1>Index</h1>
 <html lang="en"
       class="light-style layout-menu-fixed"
       dir="ltr"
@@ -974,13 +968,55 @@
     <!-- Page CSS -->
     <!-- Helpers -->
     <script src="../assets/vendor/js/helpers.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
 </head>
 
 <body>
+    <header>
+         <div class="container px-0">
+        <nav class="navbar navbar-light bg-white navbar-expand-xl">
+        <a href="index.html" class="navbar-brand">
+        <h1 class="display-6 brand-name">Sopal</h1>
+        </a>
+      @*   <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="fa fa-bars text-primary"></span>
+        </button> *@
+        <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+        <div class="navbar-nav mx-auto">
+        <a class="nav-item nav-link active" asp-controller="Conteneur" asp-action="Add">Home</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Conteneur" asp-action="Index">Gestion des conteneurs</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">gestion d'etalonnage</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="">Contact</a>
+
+        <a class="nav-link text-dark" asp-controller="Utilisateur" asp-action="Register"> Register </a>
+
+        </div>
+        <div class="d-flex m-3 me-0">
+        @*   <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"> 
+        <i class="fas fa-search text-primary"></i>
+        </button> *@
+       @*   <a href="#" class="position-relative me-4 my-auto">
+        <i class="fa fa-shopping-bag fa-2x"></i>
+        <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+        </a>  *@
+         @*  <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action=""> 
+          <img src="~/img/logosopal.png" class="img-fluid" style="max-width: 100px; height: auto;" alt="Logo Sopal"> 
+
+                                </a>
+        <a class="my-auto" asp-area="" asp-controller="" asp-action="">
+        <i class="fas fa-user fa-2x" style="color: blue;"></i>
+        </a> *@
+        </div>
+        </div>
+        </nav>
+        </div> 
+    </header>
 <div class="container">
     <div class="row">
         <!-- Tableau à gauche -->
@@ -1007,7 +1043,7 @@
                                     <th>Action</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                                <tbody id="userTableBody">
                                 @foreach (var conteneur in Model)
                                 {
                                         <tr onclick="loadConteneurData('@conteneur.Ref', '@conteneur.CodeBarres', '@conteneur.Emplacement', '@conteneur.Unite', '@conteneur.DateCreate', '@conteneur.DateDernierEtalonnage', '@conteneur.DateMiseEnService', '@conteneur.DateUpdate', '@conteneur.DernierPoids', '@conteneur.PeriodiciteEtalonnage', '@conteneur.UserCreate', '@conteneur.UserUpdate')">
