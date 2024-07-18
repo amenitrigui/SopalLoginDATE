@@ -35,7 +35,7 @@ namespace SopalS.Controllers
                 _dataContext.Utilisateur.Add(model);
                 await _dataContext.SaveChangesAsync();
 
-                return RedirectToAction("Login");
+                return RedirectToAction("Index", "Home");
             }
 
             return View(model);
@@ -53,7 +53,7 @@ namespace SopalS.Controllers
             if (user != null && BCrypt.Net.BCrypt.Verify(password, user.Password))
             {
                 // Set authentication cookie or token here
-                return RedirectToAction("Index", "Conteneur");
+                return RedirectToAction("Index", "Home");
             }
 
             ModelState.AddModelError(string.Empty, "Nom de famille ou mot de passe incorrect.");

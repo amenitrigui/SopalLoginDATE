@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H6P2TTlfLVhY1sKtsZluEku695HOeia9fGz4+XjSMlE=",
+  "Hash": "3nEKQg/feZ9qCjNEA4/Vv1Evtt/WIab0BD7y9v1sv5U=",
   "Source": "SopalS",
   "BasePath": "_content/SopalS",
   "Mode": "Default",
@@ -2669,6 +2669,23 @@
       "OriginalItemSpec": "wwwroot\\img\\sopal1.jpg"
     },
     {
+      "Identity": "D:\\2emeannee2emesemetre\\Asp.Net\\SopalS datedernieretalonage\\wwwroot\\img\\sopal2.jpeg",
+      "SourceId": "SopalS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\2emeannee2emesemetre\\Asp.Net\\SopalS datedernieretalonage\\wwwroot\\",
+      "BasePath": "_content/SopalS",
+      "RelativePath": "img/sopal2.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\sopal2.jpeg"
+    },
+    {
       "Identity": "D:\\2emeannee2emesemetre\\Asp.Net\\SopalS datedernieretalonage\\wwwroot\\img\\sopal2.jpg",
       "SourceId": "SopalS",
       "SourceType": "Discovered",
@@ -2718,6 +2735,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\sopal4.jpg"
+    },
+    {
+      "Identity": "D:\\2emeannee2emesemetre\\Asp.Net\\SopalS datedernieretalonage\\wwwroot\\img\\sopal5.jpg",
+      "SourceId": "SopalS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\2emeannee2emesemetre\\Asp.Net\\SopalS datedernieretalonage\\wwwroot\\",
+      "BasePath": "_content/SopalS",
+      "RelativePath": "img/sopal5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\sopal5.jpg"
     },
     {
       "Identity": "D:\\2emeannee2emesemetre\\Asp.Net\\SopalS datedernieretalonage\\wwwroot\\img\\testimonial-1.jpg",
